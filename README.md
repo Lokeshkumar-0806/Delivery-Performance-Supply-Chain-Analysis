@@ -32,7 +32,7 @@ Main file: `DataCoSupplyChainDataset.csv`
 - 53 original columns
 - Date range: January 2015 – January 2018
 
-The original dataset is not included in this repository because of its size. The Kaggle source is provided above.
+The original dataset is not included in this repository because of its size. Download it from the Kaggle source above and place `DataCoSupplyChainDataset.csv` in the same directory as the notebook before running the notebook. The SQL script assumes that you have already prepared and imported a cleaned table named `delivery_data_clean` into MySQL.
 
 ---
 
