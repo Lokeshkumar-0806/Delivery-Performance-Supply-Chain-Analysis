@@ -1,4 +1,6 @@
-LOAD DATA LOCAL INFILE 'C:/Users/Pushpa/Downloads/delivery_data_clean.csv'
+-- Import template: replace the path below with the location of your cleaned CSV file on your own machine.
+-- Run this only after creating delivery_data_clean with matching column definitions.
+LOAD DATA LOCAL INFILE 'path/to/delivery_data_clean.csv'
 INTO TABLE delivery_data_clean
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -182,7 +184,7 @@ order by average_actual_shipping_time;
 select `Shipping Mode`,avg(`Delivery Delay`) as average_delay
 from delivery_data_clean
 group by `Shipping Mode`
-order by average_delaysahil;
+order by average_delay;
 
 #Which regions have an average delivery delay greater than 0?
 select `Order Region`, avg(`Delivery Delay`) as average_delay
